@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "buum-e-mobile-app",
+    "slug": "buum-e-mobile-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gunayakay.buumemobileapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gunayakay.buumemobileapp"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +38,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e8c80f76-9fe4-4313-8898-ea44539625d9"
+      }
+    },
+    "owner": "gunayakay",
+    "updates": {
+      "url": "https://u.expo.dev/e8c80f76-9fe4-4313-8898-ea44539625d9"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
