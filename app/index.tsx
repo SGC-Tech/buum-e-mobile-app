@@ -84,7 +84,7 @@ export default function App() {
               Device Info: "react-native-device-info": "^11.1.0"
             </Text>
             <Text style={styles.codetText}>npx expo install expo-device</Text>
-          </View> */}
+          </View> 
           <View style={styles.innerContainer}>
             <Text style={styles.titleText}>
               React Native Dialog: "react-native-dialog": "^9.3.0"
@@ -127,6 +127,7 @@ export default function App() {
               npx expo install expo-secure-store
             </Text>
           </View>
+          
           <View style={styles.innerContainer}>
             <Text style={styles.titleText}>
               {" "}
@@ -154,6 +155,7 @@ export default function App() {
               npx expo install react-native-screens
             </Text>
           </View>
+          */}
           <View style={styles.innerContainer}>
             <Text style={styles.titleText}>
               Masked Text: "react-native-mask-text": "^0.14.2",
