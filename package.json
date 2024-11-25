@@ -73,6 +73,7 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
     "@babel/runtime": "^7.26.0",
+    "@dword-design/eslint-plugin-import-alias": "^5.1.1",
     "@tanstack/eslint-plugin-query": "^5.61.3",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.3.12",

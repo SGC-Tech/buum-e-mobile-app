@@ -7,10 +7,10 @@ export default function Home() {
   const { styles } = useStyles(stylesheet);
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>burası buum-e home</Text>
+      <Text style={styles.text}>burası buum-e about</Text>
 
-      <Link href="/about">
-        <Text style={styles.text}>buum-e about'a gidecek</Text>
+      <Link href="/">
+        <Text style={styles.text}>buum-e home'a gidecek</Text>
       </Link>
     </View>
   );

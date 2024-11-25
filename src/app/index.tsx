@@ -1,3 +1,4 @@
+import "#themes/unistyles";
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 import { createStyleSheet, useStyles } from "react-native-unistyles";
@@ -6,9 +7,10 @@ export default function Home() {
   const { styles } = useStyles(stylesheet);
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>burası buum-e about</Text>
-      <Link href="/">
-        <Text style={styles.text}>buum-e home'a gidecek</Text>
+      <Text style={styles.text}>burası buum-e home</Text>
+
+      <Link href="/about">
+        <Text style={styles.text}>buum-e about'a gidecek</Text>
       </Link>
     </View>
   );
@@ -20,8 +22,8 @@ const stylesheet = createStyleSheet((theme) => ({
     alignItems: "center",
   },
   text: {
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: "bold",
-    color: theme.colors.primary,
+    color: theme.colors.success,
   },
 }));

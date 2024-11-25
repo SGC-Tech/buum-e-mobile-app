@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ["module:@react-native/babel-preset"],
+  presets: ["babel-preset-expo"],
   env: {},
   plugins: [
     [
@@ -7,7 +7,7 @@ module.exports = {
       {
         root: ["./"],
         alias: {
-          "#": "./src",
+          "#": "./app",
           "#app": "./src",
           "#assets": "./src/assets",
           "#components": "./src/components",
@@ -34,5 +34,6 @@ module.exports = {
       },
     ],
     "react-native-reanimated/plugin",
+    // require.resolve("expo-router/babel"),
   ],
 };
