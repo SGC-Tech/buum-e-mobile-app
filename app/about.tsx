@@ -6,7 +6,7 @@ export default function Home() {
   const { styles } = useStyles(stylesheet);
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Unistyles example</Text>
+      <Text style={styles.text}>buum-e</Text>
     </View>
   );
 }
@@ -17,7 +17,7 @@ const stylesheet = createStyleSheet((theme) => ({
     alignItems: "center",
   },
   text: {
-    fontSize: 20,
+    fontSize: 32,
     fontWeight: "bold",
     color: theme.colors.primary,
   },
