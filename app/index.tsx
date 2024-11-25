@@ -6,7 +6,7 @@ export default function App() {
     <ScrollView>
       <View style={styles.container}>
         <View>
-          <View style={styles.innerContainer}>
+          {/* <View style={styles.innerContainer}>
             <Text style={styles.titleText}>
               Gorhom Bottom Sheet: "@gorhom/bottom-sheet": "^4.6.4"
             </Text>
@@ -84,7 +84,7 @@ export default function App() {
               Device Info: "react-native-device-info": "^11.1.0"
             </Text>
             <Text style={styles.codetText}>npx expo install expo-device</Text>
-          </View>
+          </View> */}
           <View style={styles.innerContainer}>
             <Text style={styles.titleText}>
               React Native Dialog: "react-native-dialog": "^9.3.0"
