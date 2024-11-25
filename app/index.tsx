@@ -1,46 +1,29 @@
-import { StatusBar } from "expo-status-bar";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { Text, View } from "react-native";
+import { createStyleSheet, useStyles } from "react-native-unistyles";
+import "../themes/unistyles";
 
-export default function App() {
+export default function Home() {
+  const { styles } = useStyles(stylesheet);
   return (
     <View style={styles.container}>
-      <ScrollView>
-        <View style={styles.innerContainer}>
-          <Text style={styles.titleText}></Text>
-          <Text style={styles.codetText}></Text>
-        </View>
-        <StatusBar style="auto" />
-      </ScrollView>
+      <Text style={styles.text}>burası buum-e home</Text>
+
+      <Link href="/about">
+        <Text style={styles.text}>buum-e about'a gidecek</Text>
+      </Link>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
+const stylesheet = createStyleSheet((theme) => ({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    padding: 12,
+    justifyContent: "center",
+    alignItems: "center",
   },
-  innerContainer: {
-    borderWidth: 1,
-    borderColor: "black",
-    borderRadius: 12,
-    marginBottom: 12,
-    padding: 8,
-  },
-  titleText: {
-    fontSize: 16,
+  text: {
+    fontSize: 24,
     fontWeight: "bold",
+    color: theme.colors.primary,
   },
-  codetText: {
-    fontSize: 12,
-    fontWeight: "bold",
-    color: "green",
-    marginTop: 4,
-  },
-  noText: {
-    fontSize: 12,
-    fontWeight: "bold",
-    color: "red",
-  },
-});
+}));
