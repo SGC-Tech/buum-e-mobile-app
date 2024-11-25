@@ -70,6 +70,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/runtime": "^7.26.0",
     "@tanstack/eslint-plugin-query": "^5.61.3",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.3.12",
